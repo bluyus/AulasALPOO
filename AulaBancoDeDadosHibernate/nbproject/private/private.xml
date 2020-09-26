@@ -3,13 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Stefano/Documents/NetBeansProjects/Hibernate/src/relacionamento1paraNcomDuasTabelas/Item.java</file>
-            <file>file:/C:/Users/Stefano/Documents/NetBeansProjects/Hibernate/src/variasclassesunicatabela/Cliente.java</file>
-            <file>file:/C:/Users/Stefano/Documents/NetBeansProjects/Hibernate/src/variasclassesunicatabela/Endereco.java</file>
-            <file>file:/C:/Users/Stefano/Documents/NetBeansProjects/Hibernate/src/relacionamento1para1/Pessoa.java</file>
-            <file>file:/C:/Users/Stefano/Documents/NetBeansProjects/Hibernate/src/relacionamento1para1/Rg.java</file>
-            <file>file:/C:/Users/Stefano/Documents/NetBeansProjects/Hibernate/src/relacionamento1paraNcomDuasTabelas/Venda.java</file>
-            <file>file:/C:/Users/Stefano/Documents/NetBeansProjects/Hibernate/src/hibernate/Hibernate.java</file>
+            <file>file:/C:/Users/Stefano/Documents/AulasALPOO/AulaBancoDeDadosHibernate/src/hibernate/Hibernate.java</file>
+            <file>file:/C:/Users/Stefano/Documents/AulasALPOO/AulaBancoDeDadosHibernate/src/relacionamento1ParaNDuasTabelasBidirecional/Loja.java</file>
+            <file>file:/C:/Users/Stefano/Documents/AulasALPOO/AulaBancoDeDadosHibernate/src/relacionamento1ParaNDuasTabelasBidirecional/Produto.java</file>
         </group>
     </open-files>
 </project-private>
