@@ -16,6 +16,8 @@ import javax.persistence.Persistence;
 import net.sf.ehcache.hibernate.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import relacionamento1ParaNDuasTabelasBidirecional.Loja;
+import relacionamento1ParaNDuasTabelasBidirecional.Produto;
 import relacionamento1para1.Pessoa;
 import relacionamento1paraNcomDuasTabelas.Item;
 import relacionamento1paraNcomDuasTabelas.Venda;
@@ -101,6 +103,27 @@ public class Hibernate {
         em.getTransaction().commit();
     }
     
+    private static void Relacionamento1ParaN_2TabelasBidirecional(EntityManager em)
+    {
+        em.getTransaction().begin(); 
+            
+        Loja loja = new Loja();            
+        loja.Nome = "Loja centro";
+        
+        Produto produto = new Produto();
+        produto.Nome = "Sapato";
+        
+        Produto produto2 = new Produto();
+        produto2.Nome = "Camiseta";
+        
+        loja.addProduto(produto);
+        loja.addProduto(produto2);
+        
+        em.persist(loja);
+
+        em.getTransaction().commit();   
+    }
+    
     private static void RelacionamentoNparaN(EntityManager em)
     {
         em.getTransaction().begin(); 
@@ -141,6 +164,7 @@ public class Hibernate {
             Relacionamento1Para1(em); 
             Relacionamento1ParaN_2Tabelas(em);
             Relacionamento1ParaN_3Tabelas(em);
+            Relacionamento1ParaN_2TabelasBidirecional(em);
             RelacionamentoNparaN(em);
                     
             em.close();
