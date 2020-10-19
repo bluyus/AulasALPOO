@@ -43,6 +43,4 @@ public class Venda {
     )
     @JoinColumn(name = "IDFK_VENDA")
     public List<Item> Item;
-    
-    
 }
