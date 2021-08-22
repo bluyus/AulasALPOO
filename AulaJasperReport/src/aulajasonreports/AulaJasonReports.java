@@ -96,9 +96,9 @@ public class AulaJasonReports {
         Connection con = cbd.criarConexao();
         
         ExemploRelatorioSimples(con);
-        ExemploRelatorioComGrupo(con);
-        ExemploRelatorioComParametro(con);
-        ExemploRelatorioPDF(con);   
+       // ExemploRelatorioComGrupo(con);
+        //ExemploRelatorioComParametro(con);
+        //ExemploRelatorioPDF(con);   
     }
     
 }
