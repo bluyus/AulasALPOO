@@ -245,7 +245,7 @@ public class Layouts {
         JFrame janela = new JFrame("GridLayout");
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
         
-        janela.getContentPane().setLayout(new GridLayout(1, 0));
+        janela.getContentPane().setLayout(new GridLayout(4, 4));
         
         JButton jb1 = new JButton("Norte");
         jb1.setPreferredSize(new Dimension(100, 15));
@@ -511,7 +511,7 @@ public class Layouts {
     }
     
     public static void main(String[] args) {   
-        GridBagLayout5();
+        GridLayout();
     }
     
 }
