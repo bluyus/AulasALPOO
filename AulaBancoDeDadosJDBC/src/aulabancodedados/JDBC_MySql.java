@@ -18,11 +18,11 @@ import java.util.List;
  */
 
 /* 
-   DOWNLOAD DO BANCO DISPONÍVEL EM: https://dev.mysql.com/downloads/file/?id=544661
-   VERSÃO: 8.0.43 
+   DOWNLOAD DO BANCO DISPONIVEL EM: https://dev.mysql.com/downloads/file/?id=544661
+   VERSAO: 8.0.43 
 
-   DRIVER DO JDBC DISPONÍVEL NO LINK: https://dev.mysql.com/downloads/connector/j/
-   Escolher a opção de plataforma independente. 
+   DRIVER DO JDBC DISPONIVEL NO LINK: https://dev.mysql.com/downloads/connector/j/
+   Escolher a opcao de plataforma independente. 
 */
 
 
