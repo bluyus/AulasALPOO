@@ -5,6 +5,8 @@
  */
 package aulabancodedadosdao;
 
+import entidades.Cliente;
+import entidades.Venda;
 import java.util.List;
 
 /**

@@ -17,29 +17,37 @@ import java.util.List;
  *
  * @author Stefano
  */
-public class SqlServerDAO implements IBancoDAO {
+public class MySqlDAO implements IBancoDAO {
 
     public Connection connection = null;
     public Statement smt;
     
-     public SqlServerDAO()
+     public MySqlDAO()
     {
-        // configurações do banco de dados
-        
-        String DRIVER = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-        String DATABASE_URL = "jdbc:sqlserver://localhost:1433;databaseName=ExercicioJDBC";
+        try 
+        {
+            // Opcional: carregar explicitamente o driver
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
-        try {
-            Class.forName(DRIVER); // Carrega o Driver
-
-            // Obtém a conexão com a base de dados
-            connection = DriverManager.getConnection(DATABASE_URL, "sa", "masterkey");
+            String url = "jdbc:mysql://localhost:3306/teste";
+            String user = "root";                             
+            String password = "admin"; 
+            
+            // Criar a conexão
+            connection = DriverManager.getConnection(url, user, password);
             smt = connection.createStatement();
             System.out.println("Conectou com o banco de dados");
 
-        } catch (SQLException|ClassNotFoundException ex) {
+
+        } catch (ClassNotFoundException ex) 
+        {
+            System.out.println("Driver JDBC não encontrado!");
             System.out.println(ex.getMessage());
-        }  
+        } catch (SQLException ex) 
+        {
+            System.out.println("Erro ao conectar no banco de dados!");
+            System.out.println(ex.getMessage());
+        } 
     }
     
     
@@ -71,7 +79,7 @@ public class SqlServerDAO implements IBancoDAO {
 
     @Override
     public List<Cliente> ListarCliente() {
-        List<Cliente> resultado = new ArrayList<Cliente>();
+        List<Cliente> resultado = new ArrayList<>();
         
         try{
         //Statement smt = connection.createStatement();

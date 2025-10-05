@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aulabancodedadosdao;
+package entidades;
 
 import java.util.ArrayList;
 import java.util.Date;

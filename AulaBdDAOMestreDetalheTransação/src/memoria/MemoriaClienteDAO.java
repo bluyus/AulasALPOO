@@ -3,8 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aulabancodedadosdao;
+package memoria;
 
+import aulabancodedadosdao.IBancoDAO;
+import entidades.Cliente;
+import entidades.Venda;
 import java.util.ArrayList;
 import java.util.List;
 

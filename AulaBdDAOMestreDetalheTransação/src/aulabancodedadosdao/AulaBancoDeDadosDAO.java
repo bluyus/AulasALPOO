@@ -5,9 +5,12 @@
  */
 package aulabancodedadosdao;
 
-import java.util.ArrayList;
+import sqlserver.SqlServerDAO;
+import entidades.Cliente;
+import entidades.ItemVenda;
+import entidades.Venda;
 import java.util.Date;
-import java.util.List;
+import mysql.MySqlDAO;
 
 /**
  *
@@ -43,8 +46,8 @@ public class AulaBancoDeDadosDAO {
         v1.ItemVenda.add(iv1);
         v1.ItemVenda.add(iv2);      
         
-        IBancoDAO banco = new SqlServerDAO();
-        banco.SalvarVenda(v1);            
+        IBancoDAO banco = new MySqlDAO();//  SqlServerDAO();
+        banco.SalvarCliente(c1);            
     }
     
 }

@@ -27,7 +27,7 @@ public class SqlServerDAO implements IBancoDAO {
         // configurações do banco de dados
         
         String DRIVER = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-        String DATABASE_URL = "jdbc:sqlserver://localhost:1433;databaseName=ExercicioJDBC";
+        String DATABASE_URL = "jdbc:sqlserver://localhost:1433;databaseName=ExercicioJDBC;trustServerCertificate=true";
 
         try {
             Class.forName(DRIVER); // Carrega o Driver

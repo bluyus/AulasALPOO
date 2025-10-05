@@ -3,8 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aulabancodedadosdao;
+package sqlserver;
 
+import aulabancodedadosdao.IBancoDAO;
+import entidades.Cliente;
+import entidades.ItemVenda;
+import entidades.Venda;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
