@@ -17,12 +17,12 @@ import java.util.List;
  *
  * @author Stefano
  */
-public class JDBC {
+public class JDBC_SqlServer {
     
     public Connection connection = null;
     public Statement smt;
     
-    public JDBC()
+    public JDBC_SqlServer()
     {
         // configurações do banco de dados
         
@@ -71,7 +71,7 @@ public class JDBC {
     
     public List<Cliente> ListarCliente()
     {
-        List<Cliente> resultado = new ArrayList<Cliente>();
+        List<Cliente> resultado = new ArrayList<>();
         
         try{
         //Statement smt = connection.createStatement();
