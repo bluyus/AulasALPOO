@@ -6,8 +6,8 @@
     <version>1.0-SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>18</maven.compiler.source>
-        <maven.compiler.target>18</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <exec.mainClass>com.aula2020unipstefano.aplicacaocommaven.AplicacaoComMaven</exec.mainClass>
     </properties>
     <dependencies>  
@@ -15,6 +15,11 @@
             <groupId>com.microsoft.sqlserver</groupId>    
             <artifactId>mssql-jdbc</artifactId>
             <version>12.2.0.jre8</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
         </dependency>
     </dependencies>     
 </project>

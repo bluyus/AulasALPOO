@@ -19,7 +19,7 @@ public class AplicacaoComMaven {
         ator.Sexo = "F";
         ator.Id = 10;
         
-        JDBC_SqlServer banco = new JDBC_SqlServer(); 
+        JDBC_MySql banco = new JDBC_MySql(); 
         banco.Salvar(ator); 
     }
 }
