@@ -6,8 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-//@Data
-@Entity
+@Entity(name = "Clientes")
 public class Cliente {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,8 +30,4 @@ public class Cliente {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
-	//lombok
-	
-	
 }

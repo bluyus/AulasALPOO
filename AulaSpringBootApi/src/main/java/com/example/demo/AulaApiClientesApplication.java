@@ -10,4 +10,5 @@ public class AulaApiClientesApplication {
 		SpringApplication.run(AulaApiClientesApplication.class, args);
 	}
 
+	// Para rodar a API utilize o endereço: http://localhost:8080/swagger-ui.html
 }
